@@ -8,14 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/1c33029000.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="indexPage">
     <header>
         <!-- background image  -->
         <div class="wrapper creativeHeader">
-            <nav class="topNavOne">
-                <ul>
+            <nav class="topNav">
+                <ul class="leftOfLogo">
                     <li><a href="">Home</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Portfolio</a></li>
@@ -23,18 +24,24 @@
                 <div class="logo">
                     <h1>Creative</h1>
                 </div>
-                <ul>
+                <ul class="rightOfLogo">
                     <li><a href="">Shop</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="">Contact</a></li>
                     <!-- need magnifying glass and shopping bag from font awesome -->
-                    <li><a href=""></a><i></i></li>
-                    <li><a href=""></a><i></i></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    <!-- position relative -->
+                    <p class="cartCount">2</p>
+                    <!-- position absolute -->
                 </ul>
             </nav>
+            <div class="verticalLine"></div>
+        </div>
     </header>
     <!-- before/after elements for a vertical line -->
     <main>
         <div class="wrapper">
+            <div class="verticalLine"></div>
             <section class="companyInfo">
                 <div class="brandingLogo">
                     <img src="./creative-assets/home-2.jpeg"
@@ -88,7 +95,7 @@
                             <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
                         </li>
                         <li>
-                            <!-- icons -->
+                            <i class="fas fa-search"></i>
                             <h3>Seo Marketing</h3>
                             <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
                         </li>
@@ -178,6 +185,7 @@
             <p>Creative agency</p>
         </div>
     </footer>
+
 </body>
 
 </html>
