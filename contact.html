@@ -30,6 +30,60 @@
             </nav>
     </header>
     <main>
+        <div class="wrapper">
+            <!-- border top? before or after element? needs to be above the C in the h1 -->
+            <div class="heroContact">
+                <h1>Contact us</h1>
+            </div>
+            <section>
+                <div class="contactDetails">
+                    <h2>Contact details</h2>
+                    <p>If you need any help, please contact us or send us an email or go to our form.</p>
+                    <p>We are sure that you can receive our reply as soon as possible</p>
+                </div>
+                <div class="contactOptions">
+                    <!-- need a phone, location/address, and an email icon from font awesome -->
+                    <div class="contactPhone">
+                        <i></i>
+                        <h3>Phone</h3>
+                        <p>Phone 01: 123 456 7890</p>
+                        <p>Phone 02: 345 678 9101</p>
+                    </div>
+                    <div class="contactAddress">
+                        <i></i>
+                        <h3>Address</h3>
+                        <p>6591 Orchard Street, Toronto, Ontario</p>
+                    </div>
+                    <div class="contactEmail">
+                        <i></i>
+                        <h3>Email</h3>
+                        <p>contact@creative.com</p>
+                        <p>info@creative.com</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Get in touch with us</h2>
+                <p>If you have any question, please don't hesitate to send us a message</p>
+                <!-- need a border bottom to be styled/added -->
+                <form action="" class="commentForm">
+                    <fieldset>
+                        <label for="fullName" class="visuallyHidden">Enter your name...</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Enter your name...">
+
+                        <label for=" email" class="visuallyHidden">Email</label>
+                        <input type="email" placeholder="Email" id="email">
+
+                        <label for="subjectOptional" class="visuallyHidden">Subject (Optional)</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject (Optional)">
+                    </fieldset>
+                    <!-- consider setting a maxlength of characters etc -->
+                    <textarea name="messageSection" id="messageSection" cols="115" rows="10"
+                        placeholder="Here goes your message"></textarea>
+                    <button type="submit">Send message</button>
+                </form>
+            </section>
+        </div>
 
     </main>
     <footer>
