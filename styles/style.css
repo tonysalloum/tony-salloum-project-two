@@ -153,8 +153,8 @@ nav .fas {
     border-radius: 9px;
     width: 1.6rem;
     height: 1.6rem;
-    right: 11.5%;
-    top: 4.75%;
+    right: 12.5%;
+    top: 5.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +181,7 @@ nav .fas {
 .companyInfo {
     background-color: #C3DAB7;
     display: flex;
-    padding: 120px 40px 60px 40px;
+    padding: 130px 40px 60px 40px;
 
 }
 
@@ -199,8 +199,8 @@ nav .fas {
 .circleLogo {
     display: flex;
     position: absolute;
-    bottom: -35%;
-    right: 55%;
+    bottom: -50%;    
+    right: 57%;
     justify-content: center;
     border: 1px solid orange;
 }
@@ -218,22 +218,38 @@ nav .fas {
 
 .servicesOne,
 .servicesTwo {
-    display: flex;
+    /* display: flex; */
     width: calc(40% - 50px);
     text-align: center;
     /* padding: 40px 80px; */
     border: 1px solid greenyellow;
+    padding-top: 50px;
 }
+
+
 
 .blogPreview {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-        padding: 50px 50px;
-
+    padding: 50px 50px;
+    position: relative;
 }
 
+.fa-chevron-left {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    font-size: 2rem;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    font-size: 2rem;
+}
 .blogPreviewImage {
     display: flex;
 }
@@ -241,11 +257,86 @@ nav .fas {
 .blogPreviewImage img {
     border-radius: 50%;
     width: 70%;
+    margin: 0 auto;
 }
 
-.blogPreviewContent {
+/* .blogPreviewContent {
+    display: flex;
+    justify-content: center;
+} */
+.blogPreviewContent p {
     /* display: flex; */
     /* width: 50%; */
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-style: italic;
+    color: #30303080;
+}
+
+.servicesOffered {
+    background: url(..//creative-assets/home-4.jpeg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    /* padding: 30px 0; */
+    background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.blankBox {
+    width: 50%;
+}
+
+.servicesList {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+}
+
+.servicesOfferedContainer {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicesOfferedContainerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.textContainer .fas,
+.textContainer .far  {
+    font-size: 2rem;
+}
+
+.textContainer h3 {
+    font-size: 1.5rem;
+}
+
+.textContainer p{
+    font-size: 1rem;
+}
+/* .servicesOneContainer {
+    display: flex;
+    width: 25%;   
+}
+
+.serviceTwoContainer {
+    width: 25%;
+} */
+
+.textContainer {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
 }
 
 

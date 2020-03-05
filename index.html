@@ -17,8 +17,8 @@
         <div class="wrapper creativeHeader">
             <nav class="topNav">
                 <ul class="leftOfLogo">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
                     <li><a href="">Portfolio</a></li>
                 </ul>
                 <div class="logo">
@@ -26,7 +26,7 @@
                 </div>
                 <ul class="rightOfLogo">
                     <li><a href="">Shop</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                     <!-- need magnifying glass and shopping bag from font awesome -->
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
@@ -40,7 +40,7 @@
     </header>
     <!-- before/after elements for a vertical line -->
     <main>
-        <section class="wrapper companyInfo">
+        <section class="companyInfo">
             <div class="wrapper">
                 <!-- <div class="verticalLine"></div> -->
                 <div class="circleLogoImage">
@@ -69,7 +69,7 @@
         <section class="blogPreview">
             <!-- need to find arrows from font awesome and learn how to apply -->
             <i class="fas fa-chevron-left"></i>
-
+            <!-- position absolute the two arrows and position relative the parent -->
             <div class="blogPreviewImage">
                 <!-- arrow -->
                 <img src="./creative-assets/home-3.jpeg" alt="an image previewing a website">
@@ -88,41 +88,75 @@
         </section>
         <section class="servicesOffered">
             <!-- background image for this section -->
-            <nav>
-                <ul>
-                    <!-- need to replace bullet items with icons -->
-                    <li>
-                        <!-- icon -->
-                        <h3>Unique Design</h3>
-                        <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
-                    </li>
-                    <li>
-                        <!-- icons -->
-                        <h3>Retina Ready</h3>
-                        <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
-                    </li>
-                    <li>
-                        <!-- icons -->
-                        <h3>Advanced Options</h3>
-                        <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-search"></i>
-                        <h3>Seo Marketing</h3>
-                        <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
-                    </li>
-                    <li>
-                        <!-- icons -->
-                        <h3>Ecommerce Ready</h3>
-                        <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
-                    </li>
-                    <li>
-                        <!-- icons -->
-                        <h3>Customizable</h3>
-                        <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
-                    </li>
-                </ul>
-            </nav>
+            <div class="blankBox">
+                <div class="servicesList">
+                    <ul class="servicesOfferedContainer">
+                        <!-- need to replace bullet items with icons -->
+                        <li class="textContainer">
+                            <!-- icon -->
+                            <div class="iconMagic">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <div>
+                                <h3>Unique Design</h3>
+                                <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
+                            </div>
+                        </li>
+                        <li class="textContainer">
+                            <!-- icons -->
+                            <div class="iconsDesktop">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <div>
+                                <h3>Retina Ready</h3>
+                                <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
+                            </div>
+                        </li>
+                        <li class="textContainer">
+                            <!-- icons -->
+                            <div class="iconsSliders">
+                                <i class="fas fa-sliders-h"></i>
+                            </div>
+                            <div>
+                                <h3>Advanced Options</h3>
+                                <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="servicesOfferedContainerTwo">
+                        <li class="textContainer">
+                            <!-- icons -->
+                            <div class="iconsSearch">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div>
+                                <h3>Seo Marketing</h3>
+                                <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
+                            </div>
+                        </li>
+                        <li class="textContainer">
+                            <!-- icons -->
+                            <div class="iconsBriefcase">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h3>Ecommerce Ready</h3>
+                                <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
+                            </div>
+                        </li>
+                        <li class="textContainer">
+                            <!-- icons -->
+                            <div class="iconsSmile">
+                                <i class="far fa-smile"></i>
+                            </div>
+                            <div>
+                                <h3>Customizable</h3>
+                                <p>Crowdsource pivot leverage seed money ownership incubator handshake.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <!-- before/after elements for a vertical line -->
         <!-- look into grid for the section below -->
