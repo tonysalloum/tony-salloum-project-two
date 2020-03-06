@@ -431,14 +431,65 @@ nav .fas {
 
 .portfolioContent h2 {
     padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 2rem;
 }
-
+.portfolioContent p {
+    padding-bottom: 20px;
+}
 .portfolioContent a {
-    
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
 }
-
+.portfolioContent a:hover, 
+.portfolioContent a:focus {
+    color: white;
+    background-color: #303030;
+    transition: ease 1s;
+}
 .portfolioImage {
     width: 50%;
 }
 
+
+/* footer styles */
+
+footer {
+    background-color: #303030;
+    color: white;
+}
+
+.footerContainer {
+    display: flex;
+}
+.contactUs, 
+.blogPostsHeader,
+.subscribeHeader {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.contactUs,
+.blogPosts,
+.subscribe {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoBottom {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.contactInfo .fab {
+    color: #ffffff;
+    padding: 5px;
+}
 /* footer list style type - circle on the li's */
