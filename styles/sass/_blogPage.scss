@@ -1,0 +1,14 @@
+
+/* blog page styles */
+.blogPage {
+    header {
+        background: $background-image-2 50% no-repeat;
+        background-size: cover;
+        height: $bg-height-2;
+        min-height: 600px;
+        /* padding: 30px 0; */
+        background-position: center;
+        display: block;
+        position: relative;
+    }
+}

@@ -1,0 +1,25 @@
+
+// contact page styles
+.contactPage {
+    header {
+        background: $background-image-3 50% no-repeat;
+        background-size: contain;
+        height: $bg-height-3;
+        // min-height: 600px;
+        /* padding: 30px 0; */
+        background-position: center;
+        display: block;
+        position: relative;
+    }
+
+
+
+// consider using the same process as we did in the footer
+    .contactContainer {
+        display: flex;
+    }
+
+    .contactDetails {
+        display: flex;
+    }
+}
