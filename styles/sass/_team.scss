@@ -1,0 +1,53 @@
+/* team players section */
+
+
+.teamPlayers {
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.teamPlayersOne,
+.teamPlayersTwo {
+    display: flex;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    width: 80%;
+}
+
+.teamContent {
+    background-color: #F6F6F6;
+    flex-basis: 53%;
+    max-width: 540px;
+    margin-right: 20px;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 60px 0 0 40px;
+}
+
+
+
+
+.teamPlayers h2 {
+    padding: 80px;
+}
+.teamPlayersImages {
+    flex-basis: 25%;
+    max-width: 270px;
+    margin-right: 20px;
+}
+
+.teamPlayersOne .teamPlayersImages:last-of-type{ margin-right: 0;}
+
+
+
+.careerLink {
+    background-color: white;
+    flex-basis: 25%;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

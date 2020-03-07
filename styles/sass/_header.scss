@@ -1,0 +1,75 @@
+/* header styles */
+
+header {
+    background: url(..//creative-assets/home-1.jpeg) 50% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    /* padding: 30px 0; */
+    background-position: center;
+    display: block;
+    position: relative;
+}
+
+nav .fas {
+    color: #333333;
+    font-size: 2rem;
+    /* padding: 30px; */
+}
+
+
+/* nav styles */
+
+.creativeHeader {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.topNav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+
+
+.leftOfLogo,
+.rightOfLogo {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.fa-shopping-bag {
+    position: relative;
+}
+
+.cartCount {
+    position: absolute;
+    background-color: #C3DAB7;
+    border-radius: 9px;
+    width: 1.6rem;
+    height: 1.6rem;
+    right: 12.5%;
+    top: 3.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftOfLogo a:hover,
+.leftOfLogo a:focus,
+.rightOfLogo a:hover,
+.rightOfLogo a:focus {
+    transition: ease 1s;
+    color: #333333;
+    text-decoration-line: line-through;
+}
+
+/* vertical lines needed */
+
+/* .verticalLine {
+    width: 50%;
+    border-right: 10px solid #333333;
+} */
+/* div width 50% border right */

@@ -1,0 +1,64 @@
+
+/* footer styles */
+
+footer {
+    background-color: #303030;
+    color: white;
+}
+
+.footerContainer {
+    display: flex;
+    /*! justify-content: ; */
+    padding: 110px;
+    justify-content: center;
+    /*! align-content: unsafe; */
+    flex-direction: inherit;
+}
+.contactUs, 
+.blogPostsHeader,
+.subscribeHeader {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.contactUs,
+.blogPosts,
+.subscribe {
+    /*! display: flex; */
+    justify-content: space-evenly;
+
+}
+
+.logoBottom {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 56px;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+}
+
+.socialIcons {
+    display: flex;
+    /*! justify-content: ; */
+    padding: 5px;
+}
+.contactInfo .fab {
+    color: #ffffff;
+    padding: 5px;
+}
+
+.footerContainer > div {
+    display: flex;
+    flex-wrap: wrap;
+    /*! flex-basis: 33$; */
+    flex-basis: 33%;
+    justify-content: flex-start;
+}
+
+.footerContainer > div > p {
+    width: 100%;
+}
+/* footer list style type - circle on the li's */

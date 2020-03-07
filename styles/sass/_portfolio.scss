@@ -1,0 +1,42 @@
+/* portfolio styles */
+
+.portfolio {
+    display: flex;
+}
+.portfolioContent {
+    width: 50%;
+    background-color: #C3DAB7;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 85px;
+}
+
+.portfolioContent h2 {
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.portfolioContent p {
+    padding-bottom: 20px;
+}
+.portfolioContent a {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.portfolioContent a:hover, 
+.portfolioContent a:focus {
+    color: white;
+    background-color: #303030;
+    transition: ease 1s;
+}
+.portfolioImage {
+    width: 50%;
+}
