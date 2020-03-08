@@ -290,7 +290,6 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   color: #333333;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 1.8px;
   line-height: 24px;
   font-weight: 400;
@@ -325,7 +324,6 @@ header {
   background: url(../../creative-assets/home-1.jpeg) 50% no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
   /* padding: 30px 0; */
   background-position: center;
   display: block;
@@ -1127,7 +1125,7 @@ input[type=email] {
   text-align: left;
 }
 
-.blogPage fieldset {
+.blogPage .commentForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1137,7 +1135,7 @@ input[type=email] {
 .blogPage input[type=text],
 .blogPage input[type=email],
 .blogPage input[type=password],
-.blogPage select {
+.blogPage form {
   height: 48px;
   padding: 0 13px;
   width: 100%;
@@ -1146,23 +1144,14 @@ input[type=email] {
   border-bottom: 1px solid #dfe0e6;
 }
 
-.blogPage .commentSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.blogPage textarea[type=commentSection] {
-  height: 48px;
-  padding: 0 13px;
-  width: 100%;
-  margin: 10px 0;
-  border: 0;
-  border-bottom: 1px solid #dfe0e6;
+.contactPage .creativeHeader {
+  height: 275px;
 }
 
 .contactPage header {
-  background: url(../../creative-assets/contact-1.jpeg) 100% no-repeat;
+  background: none 50% no-repeat;
+  height: 275px;
+  background-size: contain;
 }
 
 .contactPage .contactImageHeader {
@@ -1178,38 +1167,61 @@ input[type=email] {
 }
 
 .contactPage .contactImageStrip {
+  background: url(../../creative-assets/contact-1.jpeg) 50% no-repeat;
   background-size: contain;
-  height: 185px;
+  height: 275px;
   display: block;
 }
 
-.contactPage .contactContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contactPage .heroContact {
+  position: relative;
 }
 
-.contactPage .contactDetails {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contactPage .contentBorderLine {
+  border-top: 3px solid #333333;
+  width: 2%;
+  position: absolute;
+  bottom: 150px;
+  left: 20%;
+}
+
+.contactPage .contactHeaderBorder h1 {
+  font-size: 4rem;
+  text-align: left;
+  padding: 10px 20%;
+  line-height: 1;
+  position: absolute;
+  bottom: 30px;
+  width: 24%;
+}
+
+.contactPage .contactContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.contactPage .contactDetails {
+  margin-left: 20%;
+  padding-bottom: 60px;
+}
+
+.contactPage .contactDetails h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-bottom: 20px;
 }
 
 .contactPage .contactOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 75%;
+  margin: auto;
 }
 
 .contactPage .contactIcons {
@@ -1219,5 +1231,7 @@ input[type=email] {
 .contactPage .contactPhone,
 .contactPage .contactAddress {
   border-right: 1px solid #303030;
+  padding-right: 60px;
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */

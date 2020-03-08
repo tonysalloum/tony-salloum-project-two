@@ -3,14 +3,21 @@
 .contactPage {
     // contact page header styles
 
+    .creativeHeader {
+        height: $bg-height-3;
+    }
     header {
-        background: $background-image-3 100% no-repeat;
+        background: none 50% no-repeat;
+        height: $bg-height-3;
+        background-size: contain;
     }
  
 
     .contactImageHeader {
         position: relative;
     }
+
+
     .topNav {
         background-color: #ffffff;
         padding: 20px;
@@ -21,7 +28,7 @@
 
 
      .contactImageStrip  {
-        // background: $background-image-3 50% no-repeat;
+        background: $background-image-3 50% no-repeat;
         background-size: contain;
         height: $bg-height-3;
         // background-position: top;
@@ -30,28 +37,56 @@
         // top: 100px;
         // margin-top: 150px;
     }
+
+    .heroContact {
+        position: relative;
+    }
+
+    .contentBorderLine {
+        border-top: 3px solid #333333;
+        width: 2%;
+        position: absolute;
+        bottom: 150px;
+        left: 20%;
+    }
+    
+    .contactHeaderBorder h1 {
+        
+        font-size: 4rem;
+        text-align: left;
+        padding: 10px 20%;
+        line-height: 1;
+        position: absolute;
+        bottom: 30px;
+        width: 24%;
+
+    }
 // consider using the same process as we did in the footer
 
+
     .contactContainer {
-        display: flex;
-        // flex-direction: column;
+        // display: flex;
+        flex-direction: column;
         // flex-wrap: wrap;
         // width: 100%;
     }
 
     .contactDetails {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: space-between;
-        flex-wrap: wrap;
-        // width: 100%;
+        margin-left: 20%;
+        padding-bottom: 60px;
+    }
+
+    .contactDetails h3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        padding-bottom: 20px;
     }
 
     .contactOptions {
         display: flex;
-        // width: 100%;
-        // width: calc(50% - 20px);
+        justify-content: space-evenly;
+        width: 75%;
+        margin: auto;
     }
 
     // .contactOptions > div {
@@ -73,5 +108,8 @@
     .contactPhone,
     .contactAddress {
         border-right: 1px solid #303030;
+        padding-right: 60px;
+        padding-bottom: 60px;
+        // padding-top: 30px;
     }
 }
