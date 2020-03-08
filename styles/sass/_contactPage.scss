@@ -1,25 +1,64 @@
 
 // contact page styles
 .contactPage {
+    // contact page header styles
+
     header {
         background: $background-image-3 50% no-repeat;
         background-size: contain;
-        height: $bg-height-3;
-        // min-height: 600px;
-        /* padding: 30px 0; */
-        background-position: center;
+        // height: $bg-height-3;
+        height: 185px;
+        background-position: top;
         display: block;
         position: relative;
     }
 
-
+    .topNav {
+        background-color: #ffffff;
+        position: relative;
+    }
 
 // consider using the same process as we did in the footer
+
     .contactContainer {
         display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // width: 100%;
     }
 
     .contactDetails {
         display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contactOptions {
+        display: flex;
+        width: 100%;
+        // width: calc(50% - 20px);
+    }
+
+    // .contactOptions > div {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     /*! flex-basis: 33$; */
+    //     flex-basis: 33%;
+    //     justify-content: flex-start;
+    // }
+
+    // .contactOptions > div > p {
+    //     width: 100%;
+    // }
+
+    .contactIcons {
+        font-size: 35px;
+    }
+
+    .contactPhone {
+        border-right: 2px solid #303030;
     }
 }
