@@ -71,32 +71,33 @@ footer {
     width: 100%;
 }
 
-form {
+.FooterForm {
     display: flex;
     align-items: center;
 }
 
-input[type=email] {
-    border: transparent;
-    text-decoration: none;
-    padding: 5px 10px;
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 1.1rem;
-    width: 75%;
+footer {
+    input[type=email] {
+        border: transparent;
+        text-decoration: none;
+        padding: 5px 10px;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 1.1rem;
+        width: 75%;
+    }
 }
-
 
 
 
 .fa-long-arrow-alt-right {
     background-color: #C3DAB7;
     font-size: 1rem;
-    height: 35%;
+    height: 30%;
     color:
     #303030;
     width: 15%;
-    display: inline-block;
+    // display: inline-block;
     text-align: center;
     padding-top: 7px;
     // margin-bottom: 12px;

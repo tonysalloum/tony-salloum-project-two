@@ -241,20 +241,23 @@
                     <h2>Leave a comment</h2>
                     <!-- need a border bottom to be styled/added -->
                     <form action="" class="commentForm">
-                        <fieldset>
-                            <label for="fullName" class="visuallyHidden">Enter your name...</label>
-                            <input type="text" name="fullName" id="fullName" placeholder="Enter your name...">
+                        <div class="formTop">
+                            <div class="formName">
+                                <label for="fullName" class="visuallyHidden">Enter your name...</label>
+                                <input type="text" name="fullName" id="fullName" placeholder="Enter your name...">
+                            </div>
                             <div class="formEmail">
                                 <label for="email" class="visuallyHidden">Email</label>
                                 <input type="email" placeholder="youremail@domain.com" id="email">
                             </div>
-
-                            <label for="subjectOptional" class="visuallyHidden">Subject (Optional)</label>
-                            <input type="text" name="subject" id="subject" placeholder="Subject (Optional)">
-                        </fieldset>
+                            <div class="formSubject">
+                                <label for="subjectOptional" class="visuallyHidden">Subject (Optional)</label>
+                                <input type="text" name="subject" id="subject" placeholder="Subject (Optional)">
+                            </div>
+                        </div>
                         <!-- consider setting a maxlength of characters etc -->
                         <div class="commentSection">
-                            <textarea name="commentSection" id="commentSection" cols="150" rows="10"
+                            <textarea name="comment" id="commentSection" cols="215" rows="10"
                                 placeholder="Here goes your comment"></textarea>
                         </div>
                         <button type="submit">Submit comment</button>

@@ -236,42 +236,59 @@
 
     .leaveComment h2 {
         border-bottom: 1px solid lightgrey;
-        padding: 60px 0 20px 0;
+        padding: 60px 0 20px 20px;
         text-align: left;
     }
 
 
     .commentForm {
         display: flex;
+        flex-direction: column;
         // flex-wrap: wrap;
-        width: 100%;
+        // width: 100%;
     }
 
-    
-    input[type=text], 
-    input[type=email], 
-    input[type=password], 
-    form {
-        height: 48px;
-        padding: 0 13px;
-        width: 100%;
-        margin: 10px 0;
-        border:0;
-        border-bottom:1px solid rgb(223, 224, 230);
+    // form styles
+    .formTop{
+        display: flex;
+        justify-content: space-between;
+    }
+    .formTop {
+        .formName,
+        .formEmail,
+        .formSubject  {
+            height: 48px;
+            padding: 0 13px;
+            // width: 100%;
+            margin: 10px 0;
+            border: 0;
+            border-bottom:1px solid rgb(223, 224, 230);
+            text-decoration: none;
+            // width: 60%;
+        }
     }
 
+    // .formEmail {
+    //     height: 48px;
+    //     padding: 0 13px;
+    //     // width: 100%;
+    //     margin: 10px 0;
+    //     border:0;
+    //     border-bottom:1px solid rgb(223, 224, 230);
+    // }
+
+    textarea {
+        border-bottom: 1px solid rgb(223, 224, 230);
+        border: transparent;
+        font-family: 'Open Sans', sans-serif;
+
+        font-size: 1.25rem;
+    }
     // .commentSection {
     //     display: flex;
     // }
 
-// textarea[type=commentSection] {
-//         height: 48px;
-//         padding: 0 13px;
-//         width: 100%;
-//         margin: 10px 0;
-//         border:0;
-//         border-bottom:1px solid rgb(223, 224, 230);
-//     }
+    
         
 
 }
