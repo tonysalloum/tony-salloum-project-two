@@ -9,11 +9,12 @@ footer {
 .footerContainer {
     display: flex;
     /*! justify-content: ; */
-    padding: 110px;
-    justify-content: center;
+    padding: 110px 0;
+    justify-content: flex-end;
     /*! align-content: unsafe; */
     flex-direction: inherit;
 }
+
 .contactUs, 
 .blogPostsHeader,
 .subscribeHeader {
@@ -26,6 +27,11 @@ footer {
 .subscribe {
     /*! display: flex; */
     justify-content: space-evenly;
+
+}
+
+.blogPosts li {
+    list-style-type: disc;
 
 }
 
@@ -43,6 +49,7 @@ footer {
 
 .socialIcons {
     display: flex;
+
 }
 
 
@@ -85,7 +92,7 @@ input[type=email] {
 .fa-long-arrow-alt-right {
     background-color: #C3DAB7;
     font-size: 1rem;
-    height: 45%;
+    height: 35%;
     color:
     #303030;
     width: 15%;

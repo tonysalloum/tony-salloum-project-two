@@ -4,20 +4,32 @@
     // contact page header styles
 
     header {
-        background: $background-image-3 50% no-repeat;
-        background-size: contain;
-        // height: $bg-height-3;
-        height: 185px;
-        background-position: top;
-        display: block;
+        background: $background-image-3 100% no-repeat;
+    }
+ 
+
+    .contactImageHeader {
         position: relative;
     }
-
     .topNav {
         background-color: #ffffff;
-        position: relative;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        top: 0;
     }
 
+
+     .contactImageStrip  {
+        // background: $background-image-3 50% no-repeat;
+        background-size: contain;
+        height: $bg-height-3;
+        // background-position: top;
+        display: block;
+        // position: relative;
+        // top: 100px;
+        // margin-top: 150px;
+    }
 // consider using the same process as we did in the footer
 
     .contactContainer {
@@ -33,12 +45,12 @@
         justify-content: flex-start;
         align-content: space-between;
         flex-wrap: wrap;
-        width: 100%;
+        // width: 100%;
     }
 
     .contactOptions {
         display: flex;
-        width: 100%;
+        // width: 100%;
         // width: calc(50% - 20px);
     }
 
@@ -58,7 +70,8 @@
         font-size: 35px;
     }
 
-    .contactPhone {
-        border-right: 2px solid #303030;
+    .contactPhone,
+    .contactAddress {
+        border-right: 1px solid #303030;
     }
 }

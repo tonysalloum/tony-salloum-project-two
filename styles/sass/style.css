@@ -744,7 +744,7 @@ nav .fas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 85px;
+  padding: 0 150px;
 }
 
 .portfolioContent h2 {
@@ -789,10 +789,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   /*! justify-content: ; */
-  padding: 110px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 110px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   /*! align-content: unsafe; */
   -webkit-box-orient: inherit;
   -webkit-box-direction: inherit;
@@ -814,6 +814,10 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.blogPosts li {
+  list-style-type: disc;
 }
 
 .logoBottom {
@@ -883,7 +887,7 @@ input[type=email] {
 .fa-long-arrow-alt-right {
   background-color: #C3DAB7;
   font-size: 1rem;
-  height: 45%;
+  height: 35%;
   color: #303030;
   width: 15%;
   display: inline-block;
@@ -904,18 +908,279 @@ input[type=email] {
   position: relative;
 }
 
+.blogPage .blogHeaderInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+
+.blogPage .blogInfoOne h1 {
+  font-size: 6rem;
+  padding-top: 100px;
+}
+
+.blogPage .blogInfoOne p {
+  padding-top: 30px;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.blogPage .blogInfoOne em {
+  color: #333333;
+  font-weight: 700;
+}
+
+.blogPage .blogInfoTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+}
+
+.blogPage .bloggerInfo {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.blogPage .bloggerInfo p {
+  color: gray;
+}
+
+.blogPage .bloggerImage {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blogPage .bloggerImage img {
+  border-radius: 50%;
+}
+
+.blogPage .blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogPage .blogInfoThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.blogPage .blogContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blogPage .blogContent > p {
+  padding: 20px 0;
+  color: gray;
+}
+
+.blogPage .blogContent :nth-child(1) {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.blogPage .shareBlogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+}
+
+.blogPage .shareBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogPage .shareSocialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogPage .shareSocialIcons .fab {
+  padding: 0px 15px 0 10px;
+  font-size: 1.5rem;
+}
+
+.blogPage .relatedPosts h2 {
+  border-bottom: 1px solid lightgrey;
+  padding: 100px 0 40px 0;
+  text-align: left;
+}
+
+.blogPage .relatedImagesGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.blogPage .relatedImages > p {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 15px 0;
+}
+
+.blogPage .comment h2 {
+  border-bottom: 1px solid lightgrey;
+  padding: 40px 0 20px 0;
+  text-align: left;
+}
+
+.blogPage .tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #ccc;
+}
+
+.blogPage .tip-left {
+  top: 1px;
+  left: -20px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.blogPage .dialogbox .commentBody {
+  position: relative;
+  width: 1100px;
+  height: 100px;
+  margin: 0px 50px;
+  background-color: #DADADA;
+}
+
+.blogPage .commentBody .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #797979;
+}
+
+.blogPage .commentCloud {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blogPage .message em {
+  font-style: italic;
+  color: forestgreen;
+}
+
+.blogPage .message :nth-child(1) {
+  text-transform: uppercase;
+}
+
+.blogPage .message > p {
+  padding: 5px 15px;
+}
+
+.blogPage .leaveComment h2 {
+  border-bottom: 1px solid lightgrey;
+  padding: 60px 0 20px 0;
+  text-align: left;
+}
+
+.blogPage fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.blogPage input[type=text],
+.blogPage input[type=email],
+.blogPage input[type=password],
+.blogPage select {
+  height: 48px;
+  padding: 0 13px;
+  width: 100%;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #dfe0e6;
+}
+
+.blogPage .commentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogPage textarea[type=commentSection] {
+  height: 48px;
+  padding: 0 13px;
+  width: 100%;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #dfe0e6;
+}
+
 .contactPage header {
-  background: url(../../creative-assets/contact-1.jpeg) 50% no-repeat;
-  background-size: contain;
-  height: 185px;
-  background-position: top;
-  display: block;
+  background: url(../../creative-assets/contact-1.jpeg) 100% no-repeat;
+}
+
+.contactPage .contactImageHeader {
   position: relative;
 }
 
 .contactPage .topNav {
   background-color: #ffffff;
-  position: relative;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.contactPage .contactImageStrip {
+  background-size: contain;
+  height: 185px;
+  display: block;
 }
 
 .contactPage .contactContainer {
@@ -939,21 +1204,20 @@ input[type=email] {
       align-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
 }
 
 .contactPage .contactOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
 }
 
 .contactPage .contactIcons {
   font-size: 35px;
 }
 
-.contactPage .contactPhone {
-  border-right: 2px solid #303030;
+.contactPage .contactPhone,
+.contactPage .contactAddress {
+  border-right: 1px solid #303030;
 }
 /*# sourceMappingURL=style.css.map */
