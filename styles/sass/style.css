@@ -906,23 +906,26 @@ footer input[type=email] {
 }
 
 .blogPage .blogHeaderInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-bottom: 1px solid gray;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blogPage .blogInfoOne h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   padding-top: 100px;
 }
 
 .blogPage .blogInfoOne p {
   padding-top: 30px;
-  color: gray;
+  color: #dfe0e6;
   font-size: 1.2rem;
 }
 
@@ -931,32 +934,25 @@ footer input[type=email] {
   font-weight: 700;
 }
 
-.blogPage .blogInfoTwo {
+.blogPage .blogHeaderInfoTwo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
+  margin: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.blogPage .bloggerInfo {
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  padding-left: 30px;
-  padding-bottom: 50px;
+.blogPage .bloggerInfoFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  width: 50%;
 }
 
-.blogPage .bloggerInfo p {
-  color: gray;
+.blogPage .blogHeaderInfoTwo p {
+  color: rgba(102, 103, 105, 0.61);
 }
 
 .blogPage .bloggerImage {
@@ -969,27 +965,11 @@ footer input[type=email] {
   border-radius: 50%;
 }
 
-.blogPage .blogFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.blogPage .blogInfoThree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.blogPage .blogBorderBottom {
+  border-bottom: 1px solid #dfe0e6;
 }
 
 .blogPage .blogContentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1001,7 +981,7 @@ footer input[type=email] {
 
 .blogPage .blogContent > p {
   padding: 20px 0;
-  color: gray;
+  color: #88898d;
 }
 
 .blogPage .blogContent :nth-child(1) {
@@ -1035,7 +1015,7 @@ footer input[type=email] {
 }
 
 .blogPage .relatedPosts h2 {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #dfe0e6;
   padding: 100px 0 40px 0;
   text-align: left;
 }
@@ -1057,7 +1037,7 @@ footer input[type=email] {
 }
 
 .blogPage .comment h2 {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #dfe0e6;
   padding: 40px 0 20px 0;
   text-align: left;
 }
@@ -1067,7 +1047,7 @@ footer input[type=email] {
   height: 0px;
   position: absolute;
   background: transparent;
-  border: 10px solid #ccc;
+  border: 10px solid #dfe0e6;
 }
 
 .blogPage .tip-left {
@@ -1083,7 +1063,7 @@ footer input[type=email] {
   width: 1100px;
   height: 100px;
   margin: 0px 50px;
-  background-color: #DADADA;
+  background-color: #dfe0e6;
 }
 
 .blogPage .commentBody .message {
@@ -1092,7 +1072,7 @@ footer input[type=email] {
   font-family: Arial;
   font-size: 14px;
   line-height: 1.5;
-  color: #797979;
+  color: rgba(25, 26, 32, 0.699);
 }
 
 .blogPage .commentCloud {
@@ -1119,7 +1099,7 @@ footer input[type=email] {
 }
 
 .blogPage .leaveComment h2 {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #dfe0e6;
   padding: 60px 0 20px 20px;
   text-align: left;
 }
@@ -1132,6 +1112,7 @@ footer input[type=email] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 30px;
 }
 
 .blogPage .formTop {
@@ -1143,22 +1124,40 @@ footer input[type=email] {
           justify-content: space-between;
 }
 
-.blogPage .formTop .formName,
-.blogPage .formTop .formEmail,
-.blogPage .formTop .formSubject {
-  height: 48px;
-  padding: 0 13px;
-  margin: 10px 0;
+.blogPage input[type=text],
+.blogPage textarea {
   border: 0;
-  border-bottom: 1px solid #dfe0e6;
-  text-decoration: none;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 10px;
+  padding-right: 170px;
+}
+
+.blogPage .formEmail input[type=email] {
+  border: transparent;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 10px;
+  padding-right: 170px;
 }
 
 .blogPage textarea {
-  border-bottom: 1px solid #dfe0e6;
-  border: transparent;
+  resize: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.blogPage button {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #333333;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  margin: 20px 0;
+  width: 10%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .contactPage .creativeHeader {
@@ -1220,25 +1219,33 @@ footer input[type=email] {
 }
 
 .contactPage .contactDetails {
-  margin-left: 20%;
+  margin-left: 15%;
   padding-bottom: 60px;
 }
 
-.contactPage .contactDetails h3 {
+.contactPage .contactDetails h3,
+.contactPage .formSection h3 {
   font-weight: 700;
   font-size: 1.25rem;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .contactPage .contactOptions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 75%;
   margin: auto;
+}
+
+.contactPage .formSection {
+  margin-left: 15%;
+}
+
+.contactPage .formSection p {
+  padding-bottom: 40px;
 }
 
 .contactPage .contactIcons {
@@ -1250,5 +1257,50 @@ footer input[type=email] {
   border-right: 1px solid #303030;
   padding-right: 60px;
   padding-bottom: 60px;
+}
+
+.contactPage .formTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactPage input[type=text],
+.contactPage textarea {
+  border: 0;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 10px;
+  padding-right: 170px;
+}
+
+.contactPage .formEmail input[type=email] {
+  border: transparent;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 10px;
+  padding-right: 170px;
+}
+
+.contactPage textarea {
+  resize: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.contactPage button {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #333333;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  margin: 20px 0;
+  width: 10%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
