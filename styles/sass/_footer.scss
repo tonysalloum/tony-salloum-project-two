@@ -78,8 +78,7 @@ footer {
     align-items: center;
 }
 
-footer {
-    input[type=email] {
+footer input[type=email] {
         border: transparent;
         text-decoration: none;
         padding: 7px 10px;
@@ -88,7 +87,7 @@ footer {
         font-size: 1.1rem;
         width: 75%;
     }
-}
+
 
 
 

@@ -453,9 +453,9 @@ nav .fas {
 
 .servicesOne,
 .servicesTwo {
-  width: calc(40% - 50px);
+  width: calc(40% - 10px);
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 30px;
 }
 
 /* blog section styles */
@@ -1829,18 +1829,19 @@ footer input[type=email] {
     bottom: -30%;
     right: 68%;
   }
-  .indexPage .servicesOne,
-  .indexPage .servicesTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .indexPage .servicesContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .indexPage .servicesOne,
+  .indexPage .servicesTwo {
+    width: 100%;
   }
   .indexPage .teamPlayers {
     width: 100%;
@@ -1853,6 +1854,7 @@ footer input[type=email] {
     width: 100%;
     padding: 20px;
     margin: 0 auto;
+    display: inline-block;
   }
   .indexPage .teamPlayersOne,
   .indexPage .teamPlayersTwo {
@@ -2176,6 +2178,11 @@ footer input[type=email] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+  }
+  .indexPage .servicesOne,
+  .indexPage .servicesTwo {
+    width: 100%;
   }
   .indexPage .servicesOffered {
     min-height: 1400px;
@@ -2204,25 +2211,34 @@ footer input[type=email] {
             flex-direction: column;
     margin-left: 10px;
   }
-  .blogPage .contactUs,
-  .blogPage .blogPostsHeader,
-  .blogPage .subscribeHeader {
+  .blogPage .dialogbox .commentBody {
+    width: 175px;
+    height: 175px;
+  }
+  .comment h2,
+  .leaveComment h2 {
+    font-size: 2.25rem;
+  }
+  .contactUs,
+  .blogPostsHeader,
+  .subscribeHeader {
     font-size: 1.65rem;
   }
 }
 
-@media (max-width: 340px) and (max-width: 340px) {
-  .contactPage .commentForm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+@media (max-width: 340px) {
+  .contactPage .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contactPage .contactHeaderBorder h1 {
-    bottom: 73px;
-    left: -22px;
+    bottom: 40px;
+    left: -30px;
   }
   .contactPage button {
     width: 30%;
