@@ -400,10 +400,15 @@ nav .fas {
 }
 
 /* vertical lines needed */
-/* .verticalLine {
-    width: 50%;
-    border-right: 10px solid #333333;
-} */
+div.verticalLine {
+  width: 50%;
+  height: 149px;
+  border-right: 1px solid #333333;
+  position: absolute;
+  right: 50%;
+  bottom: -9%;
+}
+
 /* div width 50% border right */
 /* services info styles */
 .companyInfo {
