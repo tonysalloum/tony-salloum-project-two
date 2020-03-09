@@ -8,10 +8,8 @@ footer {
 
 .footerContainer {
     display: flex;
-    /*! justify-content: ; */
     padding: 110px 0;
     justify-content: flex-end;
-    /*! align-content: unsafe; */
     flex-direction: inherit;
 }
 
@@ -25,7 +23,6 @@ footer {
 .contactUs,
 .blogPosts,
 .subscribe {
-    /*! display: flex; */
     justify-content: space-evenly;
 
 }
@@ -48,7 +45,8 @@ footer {
 }
 
 .socialIcons {
-    display: flex;
+    display: inline-block;
+    justify-content: center;
 
 }
 
@@ -62,9 +60,8 @@ footer {
 .footerContainer > div {
     display: flex;
     flex-wrap: wrap;
-    /*! flex-basis: 33$; */
-    flex-basis: 33%;
-    justify-content: flex-start;
+    flex-basis: 50%;
+    justify-content: space-evenly;
 }
 
 .footerContainer > div > p {

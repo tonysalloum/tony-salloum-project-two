@@ -336,6 +336,14 @@ nav .fas {
   /* padding: 30px; */
 }
 
+.hamburger {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
 /* nav styles */
 .creativeHeader {
   display: -webkit-box;
@@ -522,7 +530,6 @@ nav .fas {
   background-size: cover;
   height: 100vh;
   min-height: 600px;
-  /* padding: 30px 0; */
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,42 +550,19 @@ nav .fas {
 .servicesList {
   width: 100%;
   margin: 0 auto;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .servicesOfferedContainer {
   max-width: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.servicesOfferedContainerTwo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .textContainer {
-  /* display: flex; */
-  /* justify-content: flex-start; */
   padding: 10px;
 }
 
@@ -619,14 +603,6 @@ nav .fas {
   padding: 5px;
 }
 
-/* .servicesOneContainer {
-    display: flex;
-    width: 25%;   
-}
-
-.serviceTwoContainer {
-    width: 25%;
-} */
 .textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,7 +610,6 @@ nav .fas {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  /* flex-wrap: wrap; */
 }
 
 /* team players section */
@@ -824,9 +799,10 @@ footer {
 }
 
 .socialIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contactInfo .fab {
@@ -1514,8 +1490,8 @@ footer input[type=email] {
 
 @media (max-width: 856px) {
   .indexPage .cartCount {
-    right: 10%;
-    top: 4.5%;
+    right: 9.5%;
+    top: 4.75%;
   }
   .indexPage .servicesOne,
   .indexPage .servicesTwo {
@@ -1530,20 +1506,24 @@ footer input[type=email] {
   .indexPage .portfolioContent {
     padding: 0 100px;
   }
-  .indexPage .servicesOfferedContainer,
-  .indexPage .servicesOfferedContainerTwo {
+  .indexPage .servicesOffered {
+    background-position: right;
+  }
+  .indexPage .servicesList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 856px) {
   .blogPage .cartCount {
-    right: 10%;
+    right: 9.5%;
     top: 5%;
   }
   .blogPage .blogInfoOne h1 {
@@ -1556,10 +1536,10 @@ footer input[type=email] {
             flex-direction: inherit;
   }
   .blogPage .relatedImagesGallery img {
-    max-width: 90%;
+    max-width: 95%;
   }
   .blogPage .dialogbox .commentBody {
-    width: 730px;
+    width: 630px;
   }
   .blogPage .formTop {
     display: -webkit-box;
@@ -1571,7 +1551,7 @@ footer input[type=email] {
             flex-direction: column;
   }
   .blogPage button {
-    width: 15%;
+    width: 17%;
     margin: 30px 0;
   }
 }
@@ -1583,7 +1563,7 @@ footer input[type=email] {
     bottom: 45px;
   }
   .contactPage .cartCount {
-    right: 7.75%;
+    right: 7%;
     top: 50.5%;
   }
   .contactPage button {
@@ -1598,6 +1578,579 @@ footer input[type=email] {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 856px) and (max-width: 780px) {
+  .indexPage .cartCount {
+    right: 9.5%;
+    top: 4.75%;
+  }
+  .indexPage .circleLogoImage img {
+    width: 90%;
+  }
+  .indexPage .circleLogo {
+    position: absolute;
+    bottom: -30%;
+    right: 68%;
+  }
+  .indexPage .servicesOne,
+  .indexPage .servicesTwo {
+    width: calc(49% - 10px);
+  }
+  .indexPage .blogPreview {
+    padding: 50px 45px;
+  }
+  .indexPage .teamContent {
+    padding: 10px 0 0 25px;
+  }
+  .indexPage .portfolioContent {
+    padding: 0px 70px;
+  }
+  .indexPage .portfolioContent a {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .indexPage .servicesOffered {
+    background-position: right;
+  }
+  .indexPage .servicesList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 856px) and (max-width: 780px) {
+  .blogPage .cartCount {
+    right: 9.5%;
+    top: 5%;
+  }
+  .blogPage .blogInfoOne h1 {
+    font-size: 3rem;
+  }
+  .blogPage .relatedImagesGallery {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+  .blogPage .relatedImagesGallery img {
+    max-width: 95%;
+  }
+  .blogPage .dialogbox .commentBody {
+    width: 580px;
+  }
+  .blogPage .formTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage button {
+    width: 18%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 856px) and (max-width: 780px) {
+  .contactPage .contactHeaderBorder h1 {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 65px;
+  }
+  .contactPage .cartCount {
+    right: 7%;
+    top: 50.5%;
+  }
+  .contactPage .contactOptions {
+    width: 90%;
+  }
+  .contactPage button {
+    width: 23%;
+    margin: 30px 0;
+  }
+  .contactPage .formTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 780px) {
+  .indexPage .cartCount {
+    right: 9.5%;
+    top: 4.75%;
+  }
+  .indexPage .circleLogoImage img {
+    width: 90%;
+  }
+  .indexPage .circleLogo {
+    position: absolute;
+    bottom: -30%;
+    right: 68%;
+  }
+  .indexPage .servicesOne,
+  .indexPage .servicesTwo {
+    width: calc(49% - 10px);
+  }
+  .indexPage .blogPreview {
+    padding: 50px 45px;
+  }
+  .indexPage .teamContent {
+    padding: 10px 0 0 25px;
+  }
+  .indexPage .portfolioContent {
+    padding: 0px 70px;
+  }
+  .indexPage .portfolioContent a {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  .indexPage .servicesOffered {
+    background-position: right;
+  }
+  .indexPage .servicesList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .blogPage .cartCount {
+    right: 9.5%;
+    top: 5%;
+  }
+  .blogPage .blogInfoOne h1 {
+    font-size: 3rem;
+  }
+  .blogPage .relatedImagesGallery {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+  .blogPage .relatedImagesGallery img {
+    max-width: 95%;
+  }
+  .blogPage .dialogbox .commentBody {
+    width: 580px;
+  }
+  .blogPage .formTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage button {
+    width: 18%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .contactPage .contactHeaderBorder h1 {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 65px;
+  }
+  .contactPage .cartCount {
+    right: 7%;
+    top: 50.5%;
+  }
+  .contactPage .contactOptions {
+    width: 90%;
+  }
+  .contactPage button {
+    width: 23%;
+    margin: 30px 0;
+  }
+  .contactPage .formTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .indexPage i.fa-bars {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #333333;
+    font-size: 3rem;
+  }
+  .indexPage h1 {
+    visibility: visible;
+  }
+  .indexPage nav li {
+    display: none;
+  }
+  .indexPage .cartCount {
+    display: none;
+  }
+  .indexPage .circleLogoImage img {
+    width: 95%;
+  }
+  .indexPage .circleLogo {
+    position: absolute;
+    bottom: -30%;
+    right: 68%;
+  }
+  .indexPage .servicesOne,
+  .indexPage .servicesTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .indexPage .teamPlayers {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .indexPage .teamPlayersOne img,
+  .indexPage .teamPlayersTwo img {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .indexPage .teamPlayersOne,
+  .indexPage .teamPlayersTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .indexPage .teamContent {
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  .indexPage .portfolioContent a {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  .indexPage .portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .indexPage .portfolioContent {
+    width: 100%;
+    padding: 40px;
+  }
+  .indexPage .portfolioImage {
+    width: 80%;
+    padding: 40px 30px;
+    margin: auto;
+  }
+  .indexPage .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
+    width: 35%;
+  }
+  .indexPage .socialIcons li {
+    display: inline-block;
+  }
+  .indexPage .contactInfoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .indexPage .contactUs,
+  .indexPage .blogPostsHeader,
+  .indexPage .subscribeHeader {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .blogPage i.fa-bars {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #333333;
+    font-size: 3rem;
+  }
+  .blogPage h1 {
+    visibility: visible;
+  }
+  .blogPage nav li {
+    display: none;
+  }
+  .blogPage .cartCount {
+    display: none;
+  }
+  .blogPage .circleLogoImage img {
+    width: 95%;
+  }
+  .blogPage .circleLogo {
+    position: absolute;
+    bottom: -30%;
+    right: 68%;
+  }
+  .blogPage .servicesOne,
+  .blogPage .servicesTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .blogPage .teamPlayers {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blogPage .teamPlayersOne img,
+  .blogPage .teamPlayersTwo img {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .blogPage .teamPlayersOne,
+  .blogPage .teamPlayersTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogPage .teamContent {
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  .blogPage .portfolioContent a {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  .blogPage .portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage .portfolioContent {
+    width: 100%;
+    padding: 40px;
+  }
+  .blogPage .portfolioImage {
+    width: 80%;
+    padding: 40px 30px;
+    margin: auto;
+  }
+  .blogPage .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
+    width: 35%;
+  }
+  .blogPage .socialIcons li {
+    display: inline-block;
+  }
+  .blogPage .contactInfoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .blogPage .contactUs,
+  .blogPage .blogPostsHeader,
+  .blogPage .subscribeHeader {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactPage i.fa-bars {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #333333;
+    font-size: 3rem;
+  }
+  .contactPage h1 {
+    visibility: visible;
+  }
+  .contactPage nav li {
+    display: none;
+  }
+  .contactPage .cartCount {
+    display: none;
+  }
+  .contactPage .circleLogoImage img {
+    width: 95%;
+  }
+  .contactPage .circleLogo {
+    position: absolute;
+    bottom: -30%;
+    right: 68%;
+  }
+  .contactPage .servicesOne,
+  .contactPage .servicesTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .contactPage .teamPlayers {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contactPage .teamPlayersOne img,
+  .contactPage .teamPlayersTwo img {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .contactPage .teamPlayersOne,
+  .contactPage .teamPlayersTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactPage .teamContent {
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  .contactPage .portfolioContent a {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+  .contactPage .portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactPage .portfolioContent {
+    width: 100%;
+    padding: 40px;
+  }
+  .contactPage .portfolioImage {
+    width: 80%;
+    padding: 40px 30px;
+    margin: auto;
+  }
+  .contactPage .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 0;
+    width: 35%;
+  }
+  .contactPage .socialIcons li {
+    display: inline-block;
+  }
+  .contactPage .contactInfoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contactPage .contactUs,
+  .contactPage .blogPostsHeader,
+  .contactPage .subscribeHeader {
+    padding: 15px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
