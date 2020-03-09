@@ -44,9 +44,8 @@ footer {
     letter-spacing: 7px;
 }
 
-.socialIcons {
+.socialIcons li {
     display: inline-block;
-    justify-content: center;
 
 }
 
@@ -60,12 +59,18 @@ footer {
 .footerContainer > div {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 33%;
-    justify-content: space-around;
+    flex-basis: 30%;
+    justify-content: unset;
 }
 
 .footerContainer > div > p {
     width: 100%;
+}
+
+.blogPostContainer, 
+.subscribeContainer {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .FooterForm {
@@ -77,7 +82,7 @@ footer {
     input[type=email] {
         border: transparent;
         text-decoration: none;
-        padding: 5px 10px;
+        padding: 7px 10px;
         font-family: inherit;
         font-weight: 400;
         font-size: 1.1rem;
@@ -90,10 +95,10 @@ footer {
 .fa-long-arrow-alt-right {
     background-color: #C3DAB7;
     font-size: 1rem;
-    height: 30%;
+    height: 25%;
     color:
     #303030;
-    width: 15%;
+    width: 20%;
     text-align: center;
     padding: 10px;
 }

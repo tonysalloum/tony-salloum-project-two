@@ -779,11 +779,8 @@ footer {
   letter-spacing: 7px;
 }
 
-.socialIcons {
+.socialIcons li {
   display: inline-block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contactInfo .fab {
@@ -797,14 +794,25 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
 }
 
 .footerContainer > div > p {
   width: 100%;
+}
+
+.blogPostContainer,
+.subscribeContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .FooterForm {
@@ -819,7 +827,7 @@ footer {
 footer input[type=email] {
   border: transparent;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 7px 10px;
   font-family: inherit;
   font-weight: 400;
   font-size: 1.1rem;
@@ -829,9 +837,9 @@ footer input[type=email] {
 .fa-long-arrow-alt-right {
   background-color: #C3DAB7;
   font-size: 1rem;
-  height: 30%;
+  height: 25%;
   color: #303030;
-  width: 15%;
+  width: 20%;
   text-align: center;
   padding: 10px;
 }
