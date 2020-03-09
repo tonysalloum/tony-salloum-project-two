@@ -96,15 +96,6 @@
 }
 
 
-// homepage media queries - 1230px
-// @media (max-width: 1256px) {
-//     .indexPage{
-//     // services section
-//         .circleLogo img {
-//             width: 70%;
-//         }
-//     }
-// }
 
 // homepage media queries - 1068px
 
@@ -121,11 +112,7 @@
         .servicesOne, 
         .servicesTwo {
             width: calc(40% - 20px);
-        }
-        
-        
-
-        
+        } 
     }
 }
 
@@ -191,6 +178,11 @@
         button {
             width: 15%;
             margin: 30px 0;
+        }
+
+        .formTop {
+            display: flex;
+            flex-direction: column;
         }
 
     }
@@ -547,8 +539,17 @@
         }
 
         .contactOptions {
-            width: 90%;
-            
+            width: 80%;
+        }
+
+        .contactIcons {
+            padding: 0px 25px;
+            margin: 0px 16px;
+        }
+
+        .contactPhone, 
+        .contactAddress {
+            border-right: none;
         }
         button {
             width: 23%;
@@ -836,9 +837,12 @@
             font-size: 3rem;
         }
 
+
         h1 {
             visibility: visible;
         }
+
+        
 
         nav li {
             display: none;
@@ -848,71 +852,19 @@
             display: none;
         }
 
-        .circleLogoImage img {
-            width: 95%;
+        .blogInfoOne h1 {
+            font-size: 2.6rem;
         }
 
-        .circleLogo {
-            position: absolute;
-            bottom: -30%;
-            right: 68%;
-        }
-        // services section
-
-        .servicesOne, 
-        .servicesTwo {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;       
-        }
-        
-        .teamPlayers {
-            width: 100%;
-            display: flex;
-        }
-        .teamPlayersOne img, 
-        .teamPlayersTwo img {
-            width: 100%;
-            padding: 20px;
-            margin: 0 auto;
+        .dialogbox .commentBody {
+            width: 425px;
+            height: 110px;
         }
 
-
-        .teamPlayersOne, 
-        .teamPlayersTwo {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        
-            // flex-wrap: wrap;
-            // width: 25%;
+        button {
+            width: 35%;
+            margin: 30px 0;
         }
-
-        .teamContent {
-            padding: 30px;
-            margin-bottom: 10px;
-        }
-
-        .portfolioContent a {
-            padding: 10px 15px;
-            font-size: 1rem;
-        }
-        
-        .portfolio {
-            flex-direction: column;
-        }
-
-        .portfolioContent {
-            width: 100%;
-            padding: 40px;
-        }
-
-        .portfolioImage {
-            width: 80%;
-            padding: 40px 30px;
-            margin: auto;
-        }
-
         .footerContainer {
             flex-direction: column;
             justify-content: center;
@@ -970,69 +922,17 @@
             display: none;
         }
 
-        .circleLogoImage img {
-            width: 95%;
+        .contactHeaderBorder h1 {
+            bottom: 73px;
+            left: -22px;
         }
 
-        .circleLogo {
-            position: absolute;
-            bottom: -30%;
-            right: 68%;
-        }
-        // services section
-
-        .servicesOne, 
-        .servicesTwo {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;       
-        }
-        
-        .teamPlayers {
-            width: 100%;
-            display: flex;
-        }
-        .teamPlayersOne img, 
-        .teamPlayersTwo img {
-            width: 100%;
-            padding: 20px;
-            margin: 0 auto;
-        }
-
-
-        .teamPlayersOne, 
-        .teamPlayersTwo {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        
-            // flex-wrap: wrap;
-            // width: 25%;
-        }
-
-        .teamContent {
-            padding: 30px;
-            margin-bottom: 10px;
-        }
-
-        .portfolioContent a {
-            padding: 10px 15px;
-            font-size: 1rem;
-        }
-        
-        .portfolio {
+        .contactOptions {
             flex-direction: column;
         }
 
-        .portfolioContent {
-            width: 100%;
-            padding: 40px;
-        }
-
-        .portfolioImage {
-            width: 80%;
-            padding: 40px 30px;
-            margin: auto;
+        button {
+            width: 30%;
         }
 
         .footerContainer {
@@ -1058,6 +958,276 @@
         }
         
 
-    x
+    
     }
+}
+
+// homepage media queries - 560px
+
+@media (max-width: 560px) {
+.indexPage {
+        // header section
+
+        .textContainer {
+            font-size: 1rem;
+        }
+
+        .servicesList {
+            justify-content: space-evenly;
+        }
+
+        
+}
+
+
+
+
+
+
+// blog page media queries - 560px
+@media (max-width: 560px) {
+    .blogPage {
+
+        
+
+        
+
+        .blogInfoOne h1 {
+            font-size: 2rem;
+        }
+
+        .dialogbox .commentBody {
+             width: 320px;
+            height: 120px;
+}
+        }
+
+        button {
+            width: 35%;
+            margin: 30px 0;
+        }
+        
+        
+
+    } 
+}
+
+
+
+
+
+// contact page media queries - 560px 
+
+@media (max-width: 560px) {
+    .contactPage {
+
+
+        .contactHeaderBorder h1 {
+            bottom: 73px;
+            left: -22px;
+        }
+
+        button {
+            width: 30%;
+        }
+
+        .contactOptions {
+            flex-direction: column;
+        }
+    }
+}
+
+
+// homepage media queries - 440px
+
+@media (max-width: 440px) {
+.indexPage {
+        // header section
+
+        .circleLogoImage img {
+            width: 100%;
+        }
+
+        .circleLogo {
+            bottom: -25%;
+            right: 65%;
+        }
+
+        .textContainer .fas,
+        .textContainer .far  {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #303030;
+            border-radius: 50%;
+        }
+
+        .servicesList div h3 {
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: flex-start;
+            // padding: 10px;
+        }
+
+        .textContainer div p{
+            font-size: 1rem;
+            // justify-content: flex-start;
+            // padding: 5px;
+        }
+
+        .teamPlayers h2 {
+            padding: 40px;
+        }
+
+        .contactUs, 
+        .blogPostsHeader,
+        .subscribeHeader {
+            font-size: 1.65rem;
+        }   
+}
+
+
+
+
+
+
+// blog page media queries - 440px
+@media (max-width: 440px) {
+    .blogPage {
+
+        
+
+        
+
+        .blogInfoOne h1 {
+            font-size: 2rem;
+        }
+
+        .blogHeaderInfoTwo {
+            flex-direction: column;
+        }
+
+        .relatedImagesGallery {
+            padding: 20px 40px;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        .dialogbox .commentBody {
+             width: 275px;
+            height: 130px;
+}
+        }
+
+        button {
+            width: 50%;
+            margin: 30px 0;
+        }
+        
+        .contactUs, 
+        .blogPostsHeader,
+        .subscribeHeader {
+            font-size: 1.65rem;
+        }
+    } 
+}
+
+
+
+
+
+// contact page media queries - 440px 
+
+@media (max-width: 440px) {
+    .contactPage {
+
+
+        .contactHeaderBorder h1 {
+            bottom: 73px;
+            left: -22px;
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+}
+
+
+// homepage media queries - 340px
+
+@media (max-width: 340px) {
+.indexPage {
+
+        .servicesContainer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .servicesOffered {
+            min-height: 1400px;
+        }
+        
+
+        .teamPlayers h2 {
+            padding: 20px;
+            font-size: 2rem;
+        }
+}
+
+
+
+
+
+
+// blog page media queries - 340px
+@media (max-width: 340px) {
+    .blogPage {
+
+        .blogInfoOne h1 {
+            font-size: 2.5rem;
+        }
+
+        .blogHeaderInfoTwo {
+            flex-direction: column;
+        }
+
+        .relatedImagesGallery {
+            padding: 20px 40px;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        
+        .contactUs, 
+        .blogPostsHeader,
+        .subscribeHeader {
+            font-size: 1.65rem;
+        }
+
+    } 
+}
+
+
+
+
+
+// contact page media queries - 340px 
+
+@media (max-width: 340px) {
+    .contactPage {
+
+        .commentForm {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .contactHeaderBorder h1 {
+            bottom: 73px;
+            left: -22px;
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+}
+
 }

@@ -225,14 +225,6 @@ html {
   font-size: 62.5%;
 }
 
-/* fonts */
-/* 
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Open Sans', sans-serif;
- */
-/* blog font color #303030 */
 body {
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
@@ -324,7 +316,6 @@ header {
   background: url(../../creative-assets/home-1.jpeg) 50% no-repeat;
   background-size: cover;
   height: 100vh;
-  /* padding: 30px 0; */
   background-position: center;
   display: block;
   position: relative;
@@ -333,7 +324,6 @@ header {
 nav .fas {
   color: #333333;
   font-size: 2rem;
-  /* padding: 30px; */
 }
 
 .hamburger {
@@ -509,13 +499,7 @@ nav .fas {
   margin: 0 auto;
 }
 
-/* .blogPreviewContent {
-    display: flex;
-    justify-content: center;
-} */
 .blogPreviewContent p {
-  /* display: flex; */
-  /* width: 50%; */
   text-align: center;
   width: 40%;
   margin: 0 auto;
@@ -529,7 +513,7 @@ nav .fas {
   background: url(../../creative-assets/home-4.jpeg) 50% no-repeat;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
+  min-height: 1000px;
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,12 +734,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*! justify-content: ; */
   padding: 110px 0;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  /*! align-content: unsafe; */
   -webkit-box-orient: inherit;
   -webkit-box-direction: inherit;
       -ms-flex-direction: inherit;
@@ -772,7 +754,6 @@ footer {
 .contactUs,
 .blogPosts,
 .subscribe {
-  /*! display: flex; */
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -816,12 +797,10 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*! flex-basis: 33$; */
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .footerContainer > div > p {
@@ -854,17 +833,15 @@ footer input[type=email] {
   color: #303030;
   width: 15%;
   text-align: center;
-  padding-top: 7px;
+  padding: 10px;
 }
 
-/* footer list style type - circle on the li's */
 /* blog page styles */
 .blogPage header {
   background: url(../../creative-assets/blog-1.jpeg) 50% no-repeat;
   background-size: cover;
   height: 90vh;
   min-height: 600px;
-  /* padding: 30px 0; */
   background-position: center;
   display: block;
   position: relative;
@@ -1293,6 +1270,10 @@ footer input[type=email] {
   font-size: 1.2rem;
 }
 
+.contactPage .contactFullImage {
+  background-image: url(.);
+}
+
 @media (max-width: 1256px) {
   .indexPage .circleLogo img {
     width: 70%;
@@ -1405,6 +1386,15 @@ footer input[type=email] {
   .contactPage button {
     width: 15%;
     margin: 30px 0;
+  }
+  .contactPage .formTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1672,7 +1662,15 @@ footer input[type=email] {
     top: 50.5%;
   }
   .contactPage .contactOptions {
-    width: 90%;
+    width: 80%;
+  }
+  .contactPage .contactIcons {
+    padding: 0px 25px;
+    margin: 0px 16px;
+  }
+  .contactPage .contactPhone,
+  .contactPage .contactAddress {
+    border-right: none;
   }
   .contactPage button {
     width: 23%;
@@ -1780,7 +1778,7 @@ footer input[type=email] {
     top: 50.5%;
   }
   .contactPage .contactOptions {
-    width: 90%;
+    width: 60%;
   }
   .contactPage button {
     width: 23%;
@@ -1934,74 +1932,16 @@ footer input[type=email] {
   .blogPage .cartCount {
     display: none;
   }
-  .blogPage .circleLogoImage img {
-    width: 95%;
+  .blogPage .blogInfoOne h1 {
+    font-size: 2.6rem;
   }
-  .blogPage .circleLogo {
-    position: absolute;
-    bottom: -30%;
-    right: 68%;
+  .blogPage .dialogbox .commentBody {
+    width: 425px;
+    height: 110px;
   }
-  .blogPage .servicesOne,
-  .blogPage .servicesTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .blogPage .teamPlayers {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .blogPage .teamPlayersOne img,
-  .blogPage .teamPlayersTwo img {
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  .blogPage .teamPlayersOne,
-  .blogPage .teamPlayersTwo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .blogPage .teamContent {
-    padding: 30px;
-    margin-bottom: 10px;
-  }
-  .blogPage .portfolioContent a {
-    padding: 10px 15px;
-    font-size: 1rem;
-  }
-  .blogPage .portfolio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blogPage .portfolioContent {
-    width: 100%;
-    padding: 40px;
-  }
-  .blogPage .portfolioImage {
-    width: 80%;
-    padding: 40px 30px;
-    margin: auto;
+  .blogPage button {
+    width: 35%;
+    margin: 30px 0;
   }
   .blogPage .footerContainer {
     -webkit-box-orient: vertical;
@@ -2053,74 +1993,18 @@ footer input[type=email] {
   .contactPage .cartCount {
     display: none;
   }
-  .contactPage .circleLogoImage img {
-    width: 95%;
+  .contactPage .contactHeaderBorder h1 {
+    bottom: 73px;
+    left: -22px;
   }
-  .contactPage .circleLogo {
-    position: absolute;
-    bottom: -30%;
-    right: 68%;
-  }
-  .contactPage .servicesOne,
-  .contactPage .servicesTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .contactPage .teamPlayers {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contactPage .teamPlayersOne img,
-  .contactPage .teamPlayersTwo img {
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
-  }
-  .contactPage .teamPlayersOne,
-  .contactPage .teamPlayersTwo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .contactPage .teamContent {
-    padding: 30px;
-    margin-bottom: 10px;
-  }
-  .contactPage .portfolioContent a {
-    padding: 10px 15px;
-    font-size: 1rem;
-  }
-  .contactPage .portfolio {
+  .contactPage .contactOptions {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contactPage .portfolioContent {
-    width: 100%;
-    padding: 40px;
-  }
-  .contactPage .portfolioImage {
-    width: 80%;
-    padding: 40px 30px;
-    margin: auto;
+  .contactPage button {
+    width: 30%;
   }
   .contactPage .footerContainer {
     -webkit-box-orient: vertical;
@@ -2151,6 +2035,189 @@ footer input[type=email] {
   .contactPage .blogPostsHeader,
   .contactPage .subscribeHeader {
     padding: 15px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .indexPage .textContainer {
+    font-size: 1rem;
+  }
+  .indexPage .servicesList {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 560px) and (max-width: 560px) {
+  .blogPage .blogInfoOne h1 {
+    font-size: 2rem;
+  }
+  .blogPage .dialogbox .commentBody {
+    width: 320px;
+    height: 120px;
+  }
+  button {
+    width: 35%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .contactPage .contactHeaderBorder h1 {
+    bottom: 73px;
+    left: -22px;
+  }
+  .contactPage button {
+    width: 30%;
+  }
+  .contactPage .contactOptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 440px) {
+  .indexPage .circleLogoImage img {
+    width: 100%;
+  }
+  .indexPage .circleLogo {
+    bottom: -25%;
+    right: 65%;
+  }
+  .indexPage .textContainer .fas,
+  .indexPage .textContainer .far {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #303030;
+    border-radius: 50%;
+  }
+  .indexPage .servicesList div h3 {
+    font-size: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .indexPage .textContainer div p {
+    font-size: 1rem;
+  }
+  .indexPage .teamPlayers h2 {
+    padding: 40px;
+  }
+  .indexPage .contactUs,
+  .indexPage .blogPostsHeader,
+  .indexPage .subscribeHeader {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 440px) and (max-width: 440px) {
+  .blogPage .blogInfoOne h1 {
+    font-size: 2rem;
+  }
+  .blogPage .blogHeaderInfoTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage .relatedImagesGallery {
+    padding: 20px 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+  }
+  .blogPage .dialogbox .commentBody {
+    width: 275px;
+    height: 130px;
+  }
+  button {
+    width: 50%;
+    margin: 30px 0;
+  }
+  .contactUs,
+  .blogPostsHeader,
+  .subscribeHeader {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .contactPage .contactHeaderBorder h1 {
+    bottom: 73px;
+    left: -22px;
+  }
+  .contactPage button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 340px) {
+  .indexPage .servicesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .indexPage .servicesOffered {
+    min-height: 1400px;
+  }
+  .indexPage .teamPlayers h2 {
+    padding: 20px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 340px) and (max-width: 340px) {
+  .blogPage .blogInfoOne h1 {
+    font-size: 2.5rem;
+  }
+  .blogPage .blogHeaderInfoTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPage .relatedImagesGallery {
+    padding: 20px 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+  }
+  .blogPage .contactUs,
+  .blogPage .blogPostsHeader,
+  .blogPage .subscribeHeader {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 340px) and (max-width: 340px) {
+  .contactPage .commentForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contactPage .contactHeaderBorder h1 {
+    bottom: 73px;
+    left: -22px;
+  }
+  .contactPage button {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

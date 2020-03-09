@@ -60,8 +60,8 @@ footer {
 .footerContainer > div {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 50%;
-    justify-content: space-evenly;
+    flex-basis: 33%;
+    justify-content: space-around;
 }
 
 .footerContainer > div > p {
@@ -94,10 +94,7 @@ footer {
     color:
     #303030;
     width: 15%;
-    // display: inline-block;
     text-align: center;
-    padding-top: 7px;
-    // margin-bottom: 12px;
+    padding: 10px;
 }
 
-/* footer list style type - circle on the li's */
