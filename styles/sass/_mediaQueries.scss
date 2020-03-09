@@ -1,6 +1,34 @@
 // homepage media queries - 1230px
+@media (max-width: 1256px) {
+    .indexPage{
+    // services section
+        .circleLogo img {
+            width: 70%;
+        }
+    }
+}
+
 
 @media (max-width: 1230px) {
+.indexPage {
+        // header section
+        .cartCount {
+            right: 11.5%;
+            top: 4.5%;
+        }
+
+        // services section
+        .circleLogo img {
+            width: 70%;
+        }
+
+        .circleLogo {
+            position: absolute;
+            bottom: -30%;    
+            right: 60%;
+        }
+    }
+}
 
 
 
@@ -8,7 +36,39 @@
 
 
 // blog page media queries - 1230px
+@media (max-width: 1230px) {
+    .blogPage {
+        .relatedImagesGallery {
+            flex-direction: inherit;
+        }
 
+        .relatedImagesGallery img {
+            max-width: 80%;
+        }
+
+        .dialogbox .commentBody {
+            position: relative;
+            width: 980px;
+            height: 100px;
+            margin: 0px 25px;
+        }
+
+        .commentBody .message {
+            min-height: 30px;
+            border-radius: 3px;
+            font-family: 'Open Sans', sans-serif;            
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: rgba(25, 26, 32, 0.699);
+        }
+        
+        button {
+            width: 12%;
+            margin: 30px 0;
+        }
+
+    }
+}
 
 
 
@@ -18,6 +78,121 @@
 
 // contact page media queries - 1230px 
 
+@media (max-width: 1230px) {
+    .contactPage {
+
+        .cartCount {
+            right: 8.5%;
+            top: 53.5%;
+        }
 
 
+        button {
+            width: 15%;
+            margin: 30px 0;
+        }
+
+    }
+}
+
+
+// homepage media queries - 1230px
+// @media (max-width: 1256px) {
+//     .indexPage{
+//     // services section
+//         .circleLogo img {
+//             width: 70%;
+//         }
+//     }
+// }
+
+// homepage media queries - 1068px
+
+@media (max-width: 1068px) {
+.indexPage {
+        // header section
+        .cartCount {
+            right: 10.5%;
+            top: 4.5%;
+        }
+
+        // services section
+
+        .servicesOne, 
+        .servicesTwo {
+            width: calc(40% - 20px);
+        }
+        
+        
+
+        
+    }
+}
+
+
+
+
+
+
+// blog page media queries - 1068px
+@media (max-width: 1068px) {
+    .blogPage {
+
+        .cartCount {
+            right: 10.5%;
+            top: 4.5%;
+        }
+        .relatedImagesGallery {
+            flex-direction: inherit;
+        }
+
+        .relatedImagesGallery img {
+            max-width: 90%;
+        }
+
+        .dialogbox .commentBody {
+            width: 830px;
+        }
+
+        .commentBody .message {
+            min-height: 30px;
+            border-radius: 3px;
+            font-family: 'Open Sans', sans-serif;            
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: rgba(25, 26, 32, 0.699);
+        }
+        
+        button {
+            width: 13%;
+            margin: 30px 0;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+// contact page media queries - 1068px 
+
+@media (max-width: 1068px) {
+    .contactPage {
+
+        .cartCount {
+            right: 7.75%;
+            top: 50.5%;
+        }
+
+
+        button {
+            width: 15%;
+            margin: 30px 0;
+        }
+
+    }
+}
 

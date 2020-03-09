@@ -1,29 +1,26 @@
 /* services info styles */
 .companyInfo {
     background-color: #C3DAB7;
-    display: flex;
+    // display: flex;
     padding: 130px 40px 60px 40px;
-
+    min-height:650px;
 }
 
 .circleLogoImage {
     position: relative;
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
 } 
 
 .circleLogoImage img {
-    width: 40%;
-    border: 1px solid red;
+    width: 50%;
 }
 .circleLogo {
     display: flex;
     position: absolute;
     bottom: -25%;    
-    right: 57%;
+    right: 60%;
     justify-content: center;
-    border: 1px solid orange;
 }
 
 .circleLogo img {
@@ -31,18 +28,12 @@
 }
 .servicesContainer {
     display: flex;
-    border: 1px solid rebeccapurple;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-items: center; */
 }
 
 .servicesOne,
 .servicesTwo {
-    /* display: flex; */
     width: calc(40% - 50px);
     text-align: center;
-    /* padding: 40px 80px; */
-    border: 1px solid greenyellow;
     padding-top: 50px;
 }

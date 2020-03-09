@@ -42,7 +42,7 @@
     
     .blogInfoOne p {
         padding-top: 30px;
-        color: rgb(223, 224, 230);
+        color: #898A8E;
         font-size: 1.2rem;
     }
 
@@ -69,15 +69,17 @@
         display: flex;
         width: 50%;
     }
-    // .bloggerInfo {
-    //     padding-left: 30px;
-    //     display: flex;
-    //     width: 50%;
-    //     flex-direction: column
-    // }
+    .bloggerInfo {
+        padding-left: 30px;
+        // display: flex;
+        // width: 50%;
+        // flex-direction: column
+    }
+
+
 
     .blogHeaderInfoTwo p {
-        color: rgba(102, 103, 105, 0.61);
+        color: #8A8B8F;
         
     }
 
@@ -152,6 +154,10 @@
         padding: 50px 0px;
     }
 
+    .relatedImagesGallery img{
+        width: 100%;
+    }
+
     .relatedImages > p {
         text-transform: uppercase;
         font-size: 1.3rem;
@@ -201,8 +207,8 @@
     .commentBody .message {
         min-height: 30px;
         border-radius: 3px;
-        font-family: Arial;
-        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;        
+        font-size: 1.2rem;
         line-height: 1.5;
         color: rgba(25, 26, 32, 0.699);
     }

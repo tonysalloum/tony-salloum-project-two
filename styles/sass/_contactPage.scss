@@ -19,7 +19,7 @@
 
 
     .topNav {
-        background-color: #ffffff;
+        // background-color: #ffffff;
         padding: 20px;
         position: absolute;
         width: 100%;
@@ -31,11 +31,12 @@
         background: $background-image-3 50% no-repeat;
         background-size: contain;
         height: $bg-height-3;
-        // background-position: top;
         display: block;
-        // position: relative;
-        // top: 100px;
-        // margin-top: 150px;
+    }
+
+    .cartCount {
+        right: 9%;
+        top: 54.5%;
     }
 
     .heroContact {
@@ -72,8 +73,13 @@
     }
 
     .contactDetails {
-        margin-left: 15%;
+        margin-left: 10%;
         padding-bottom: 60px;
+    }
+
+    .contactDetails p, 
+    .formSection p {
+        color: #8a8a8a;
     }
 
     .contactDetails h3,
@@ -86,9 +92,9 @@
 
     .contactOptions {
         display: flex;
-        justify-content: space-around;
-        width: 75%;
-        margin: auto;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
     }
 
     // .contactOptions > div {
@@ -103,9 +109,10 @@
     //     width: 100%;
     // }
 
-        .formSection {
-            margin-left: 15%;
-        }
+    .formSection {
+        margin-left: 10%;
+        width: 80%;
+    }
 
     .formSection p {
         padding-bottom: 40px;
@@ -115,9 +122,14 @@
         font-size: 35px;
     }
 
+    .contactIcons > i + p {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
     .contactPhone,
     .contactAddress {
-        border-right: 1px solid #303030;
+        border-right: 1px solid #e6e6e6;
         padding-right: 60px;
         padding-bottom: 60px;
         // padding-top: 30px;
@@ -153,13 +165,11 @@
     button {
         border: none;
         background: transparent;
-        // text-decoration: underline;
         border-bottom: 1px solid #333333;
         font-family: 'Open Sans', sans-serif;
         text-align: left;
         margin: 20px 0;
-        width: 10%;
-        // padding-bottom: 10px;
+        width: 13%;
         display: inline-block;
         text-transform: uppercase;
         font-size: 1.2rem;

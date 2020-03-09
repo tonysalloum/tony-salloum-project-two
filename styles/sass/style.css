@@ -410,10 +410,8 @@ nav .fas {
 /* services info styles */
 .companyInfo {
   background-color: #C3DAB7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 130px 40px 60px 40px;
+  min-height: 650px;
 }
 
 .circleLogoImage {
@@ -424,12 +422,10 @@ nav .fas {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid blue;
 }
 
 .circleLogoImage img {
-  width: 40%;
-  border: 1px solid red;
+  width: 50%;
 }
 
 .circleLogo {
@@ -438,11 +434,10 @@ nav .fas {
   display: flex;
   position: absolute;
   bottom: -25%;
-  right: 57%;
+  right: 60%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid orange;
 }
 
 .circleLogo img {
@@ -453,21 +448,15 @@ nav .fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid rebeccapurple;
-  /* flex-direction: column; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* align-items: center; */
 }
 
 .servicesOne,
 .servicesTwo {
-  /* display: flex; */
   width: calc(40% - 50px);
   text-align: center;
-  /* padding: 40px 80px; */
-  border: 1px solid greenyellow;
   padding-top: 50px;
 }
 
@@ -925,7 +914,7 @@ footer input[type=email] {
 
 .blogPage .blogInfoOne p {
   padding-top: 30px;
-  color: #dfe0e6;
+  color: #898A8E;
   font-size: 1.2rem;
 }
 
@@ -951,8 +940,12 @@ footer input[type=email] {
   width: 50%;
 }
 
+.blogPage .bloggerInfo {
+  padding-left: 30px;
+}
+
 .blogPage .blogHeaderInfoTwo p {
-  color: rgba(102, 103, 105, 0.61);
+  color: #8A8B8F;
 }
 
 .blogPage .bloggerImage {
@@ -1030,6 +1023,10 @@ footer input[type=email] {
   padding: 50px 0px;
 }
 
+.blogPage .relatedImagesGallery img {
+  width: 100%;
+}
+
 .blogPage .relatedImages > p {
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -1069,8 +1066,8 @@ footer input[type=email] {
 .blogPage .commentBody .message {
   min-height: 30px;
   border-radius: 3px;
-  font-family: Arial;
-  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
   line-height: 1.5;
   color: rgba(25, 26, 32, 0.699);
 }
@@ -1175,7 +1172,6 @@ footer input[type=email] {
 }
 
 .contactPage .topNav {
-  background-color: #ffffff;
   padding: 20px;
   position: absolute;
   width: 100%;
@@ -1187,6 +1183,11 @@ footer input[type=email] {
   background-size: contain;
   height: 275px;
   display: block;
+}
+
+.contactPage .cartCount {
+  right: 9%;
+  top: 54.5%;
 }
 
 .contactPage .heroContact {
@@ -1219,8 +1220,13 @@ footer input[type=email] {
 }
 
 .contactPage .contactDetails {
-  margin-left: 15%;
+  margin-left: 10%;
   padding-bottom: 60px;
+}
+
+.contactPage .contactDetails p,
+.contactPage .formSection p {
+  color: #8a8a8a;
 }
 
 .contactPage .contactDetails h3,
@@ -1234,14 +1240,16 @@ footer input[type=email] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 75%;
-  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contactPage .formSection {
-  margin-left: 15%;
+  margin-left: 10%;
+  width: 80%;
 }
 
 .contactPage .formSection p {
@@ -1252,9 +1260,14 @@ footer input[type=email] {
   font-size: 35px;
 }
 
+.contactPage .contactIcons > i + p {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .contactPage .contactPhone,
 .contactPage .contactAddress {
-  border-right: 1px solid #303030;
+  border-right: 1px solid #e6e6e6;
   padding-right: 60px;
   padding-bottom: 60px;
 }
@@ -1298,9 +1311,124 @@ footer input[type=email] {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   margin: 20px 0;
-  width: 10%;
+  width: 13%;
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1256px) {
+  .indexPage .circleLogo img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1230px) {
+  .indexPage .cartCount {
+    right: 11.5%;
+    top: 4.5%;
+  }
+  .indexPage .circleLogo img {
+    width: 70%;
+  }
+  .indexPage .circleLogo {
+    position: absolute;
+    bottom: -30%;
+    right: 60%;
+  }
+}
+
+@media (max-width: 1230px) {
+  .blogPage .relatedImagesGallery {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+  .blogPage .relatedImagesGallery img {
+    max-width: 80%;
+  }
+  .blogPage .dialogbox .commentBody {
+    position: relative;
+    width: 980px;
+    height: 100px;
+    margin: 0px 25px;
+  }
+  .blogPage .commentBody .message {
+    min-height: 30px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgba(25, 26, 32, 0.699);
+  }
+  .blogPage button {
+    width: 12%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 1230px) {
+  .contactPage .cartCount {
+    right: 8.5%;
+    top: 53.5%;
+  }
+  .contactPage button {
+    width: 15%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 1068px) {
+  .indexPage .cartCount {
+    right: 10.5%;
+    top: 4.5%;
+  }
+  .indexPage .servicesOne,
+  .indexPage .servicesTwo {
+    width: calc(40% - 20px);
+  }
+}
+
+@media (max-width: 1068px) {
+  .blogPage .cartCount {
+    right: 10.5%;
+    top: 4.5%;
+  }
+  .blogPage .relatedImagesGallery {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+  .blogPage .relatedImagesGallery img {
+    max-width: 90%;
+  }
+  .blogPage .dialogbox .commentBody {
+    width: 830px;
+  }
+  .blogPage .commentBody .message {
+    min-height: 30px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgba(25, 26, 32, 0.699);
+  }
+  .blogPage button {
+    width: 13%;
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 1068px) {
+  .contactPage .cartCount {
+    right: 7.75%;
+    top: 50.5%;
+  }
+  .contactPage button {
+    width: 15%;
+    margin: 30px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
