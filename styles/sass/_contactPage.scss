@@ -52,7 +52,6 @@
     }
     
     .contactHeaderBorder h1 {
-        
         font-size: 4rem;
         text-align: left;
         padding: 10px 20%;
@@ -66,10 +65,7 @@
 
 
     .contactContainer {
-        // display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
-        // width: 100%;
     }
 
     .contactDetails {
@@ -97,17 +93,7 @@
         margin: 0 auto;
     }
 
-    // .contactOptions > div {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     /*! flex-basis: 33$; */
-    //     flex-basis: 33%;
-    //     justify-content: flex-start;
-    // }
 
-    // .contactOptions > div > p {
-    //     width: 100%;
-    // }
 
     .formSection {
         margin-left: 10%;
